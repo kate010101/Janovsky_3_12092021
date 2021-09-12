@@ -1,13 +1,6 @@
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/polices";
+@import "./layouts/header";
+@import "./layouts/footer";
 
-p {
-    color: $color-primary;
-}
-
-h1 {
-    color: $color-secondary;
-}
-
-h2 {
-    color: $color-primary;
-}

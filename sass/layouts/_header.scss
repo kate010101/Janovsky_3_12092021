@@ -1,0 +1,20 @@
+.logo {
+
+    & a {
+        @include liens;
+    }
+
+    &__ban {
+        display: flex;
+        justify-content: center;
+        box-shadow: $box-shadow;
+        background-color: $back-clr;
+    }
+
+    &__img {
+        width: 11rem;
+        margin: 10px;
+        padding-top: 10px;
+    }
+
+}

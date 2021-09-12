@@ -1,13 +1,67 @@
-p {
-  color: black;
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: white;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Shrikhand, sans-serif;
 }
 
-h2 {
-  color: black;
+.logo a {
+  display: block;
+  text-decoration: none;
+}
+.logo__ban {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 3px 3px lightgrey;
+  background-color: #fff;
+}
+.logo__img {
+  width: 11rem;
+  margin: 10px;
+  padding-top: 10px;
+}
+
+.footer__logo--clr {
+  filter: invert(1);
+  width: 7rem;
+  margin-bottom: 20px;
+  align-content: space-between;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.footer__choice {
+  color: #fff;
+  background: #353535;
+  display: flex;
+  flex-direction: column;
+}
+.footer__options {
+  list-style-type: none;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__options a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.footer__options__icon {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
