@@ -1,10 +1,12 @@
-$box-shadow: 0px 4px 4px lightgrey;
+$box-shadow: 0px 4px 4px #dbdbdb;
 
 $back-clr: #fff;
 
 $back-clr-location: hsl(0, 2%, 92%);
 
 $back-clr-foot: #353535;
+
+$color-p: lighten($back-clr-foot, 25%);
 
 $color-primary: #9356DC;
 

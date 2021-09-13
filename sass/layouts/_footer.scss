@@ -26,11 +26,10 @@
         line-height: 25px;
 
         & a {
-        @include liens;
         color: $back-clr;
         }
 
-        &__icon {
+        &--icon {
             @include icon;
             }
     }

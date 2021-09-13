@@ -29,7 +29,7 @@
     }
     
     &__text p {
-        color: lighten($back-clr-foot, 20%);
+        color: $color-p;
         width: 80%;
         display: inline-flex;
         margin-top: 0;
@@ -38,18 +38,55 @@
     }
 }
 
+.titlesection2 {
+    & h2 {
+        @include grostitres;
+        margin-left: 15px;
+    }
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .fonction {
 
+    border-radius: 20px;
+    box-shadow: $box-shadow;
+    width: 90%;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    @include marginfonction;
 
-    & h2 {
-        @include grostitres;
-        margin-left: 10px;
-    }
 
-    &__rest {
+    &__bloc {
+        color: $back-clr;
+        border-radius: 20px;
+        background: $color-primary;
+        padding-top: 6px;
+        padding-bottom: 2px;
+        padding-left: 9px;
+        padding-right: 8px;
+        font-size: 14px;
+        font-weight: 100;
+        margin-left: -12px;
+        margin-right: 20px;
 
+        &--mob {    
+            color: $color-p;
+            font-size: 19px;
+            margin-right: 20px;
+        }
+        &--list {
+            color: $color-p;
+            font-size: 15px;
+            margin-right: 17px;
+        }
+        &--store {
+            color: $color-primary;
+            margin-right: 13px;
+        }
     }
 }
