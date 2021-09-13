@@ -8,11 +8,11 @@
         display: flex;
         justify-content: center;
         box-shadow: $box-shadow;
-        background-color: $back-clr;
+        margin-bottom: 4px;
     }
 
     &__img {
-        width: 11rem;
+        width: 10rem;
         margin: 10px;
         padding-top: 10px;
     }

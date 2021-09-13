@@ -2,3 +2,27 @@
     display: block;
     text-decoration: none;
 }
+
+ @mixin icon {
+    font-size: 13px;
+    margin-right: 6px;
+    width: 17px;
+ }
+
+ @mixin ban-loc {
+    background: $back-clr-location;
+    color: $back-clr-foot;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ @mixin intro-sect {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ @mixin grostitres {
+    letter-spacing: -1px;
+    font-size: 23px;
+ }

@@ -3,4 +3,27 @@
 @import "./base/polices";
 @import "./layouts/header";
 @import "./layouts/footer";
+@import "./pages/accueil";
+@import "./components/btns";
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li, p {
+    font-family: "Roboto" , sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Shrikhand" , sans-serif;
+    font-weight: bold;
+}
+
+a {
+    @include liens;
+}
+
+ul {
+    list-style-type: none;
+}

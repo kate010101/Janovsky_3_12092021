@@ -23,11 +23,52 @@
    </div>
 </header>
 
+<!--Section d'introduction-->
 <section class="intro">
-   <div class="location">
+   <div class="intro__localisation">
+      <form>
+         <p>
+            <label for="location"><i class="fas fa-map-marker-alt"></i></label>
+            <input type="text" name="location" id="location" value="Paris, Belleville" class="intro__localisation--input"/>
+         </p> 
+      </form> 
+   </div>
+   <div class="intro__text">
+      <h1>Réservez le menu qui vous convient</h1>  
+      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+   </div>
+   <div class="btn">
+      <a href="#">
+         <button class="btn__explore">Explorer nos restaurants</button>
+      </a> 
+   </div>     
+</section>
+
+<!--Section Fonctionnement-->
+<section class="fonction">
+   <div>
+      <h2>Fonctionnement</h2>
+   </div>
+   <div>
+      <div class="fonction__rest">
+         <a>
+            <h4><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</h4>
+         </a>   
+      </div> 
+      <div class="fonction__menu">
+         <a>
+            <h4><i class="fas fa-list-ul"></i>Composez votre menu</h4>
+         </a>   
+      </div>  
+      <div class="fonction__eat">
+         <a>
+            <h4><i class="fas fa-store"></i>Dégustez au restaurant</h4>
+         </a>   
+      </div>   
    </div>
 </section>
 
+<!--Bas de page-->
 <footer>
    <div class="footer__choice">
       <div class="footer__logo">
@@ -38,7 +79,7 @@
                <li><i class="fa fa-cutlery footer__options__icon" aria-hidden="true"></i>Proposer un restaurant</li>
             </a>
             <a href="#">
-               <li><i class="fa fa-handshake-o footer__options__icon--rot" aria-hidden="true"></i>Devenir partenaire</li>
+               <li><i class="fas fa-hands-helping footer__options__icon"></i>Devenir partenaire</li>
             </a>
             <a href="#">
                <li>Mentions légales</li>
