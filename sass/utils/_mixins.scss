@@ -39,3 +39,11 @@
    height: 70%;
  }
 
+
+@mixin heart2 {
+   font-size: 25px;
+   background: linear-gradient(174deg, #ff79da, #9356dc);
+   -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 900;
+}

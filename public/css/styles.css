@@ -58,9 +58,8 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  height: 323px;
   background-color: #f6f6f6;
-  margin-bottom: 30px;
+  padding-bottom: 55px;
 }
 .intro__localisation {
   background: #eaeaea;
@@ -101,7 +100,8 @@
 
 /*Section 2*/
 .section2 {
-  height: 420px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 .section2__bloc {
   display: flex;
@@ -178,7 +178,6 @@
 /*Section 3*/
 .section3 {
   background-color: #f6f6f6;
-  height: 1215px;
 }
 .section3__bloc--title {
   letter-spacing: -1px;
@@ -193,10 +192,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 1055px;
+  height: 1070px;
+  padding-bottom: 70px;
 }
 .cards__bloc {
-  flex-basis: 20%;
   border-radius: 15px;
   box-shadow: 0px 4px 4px #ececec;
   background-color: #fff;
@@ -232,12 +231,19 @@
   width: 90%;
 }
 .cards__bloc__text {
-  line-height: 6px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 14px;
+}
+.cards__bloc__text__cont {
+  flex-basis: 77%;
 }
 .cards__bloc__text p {
   color: #353535;
   font-size: 17px;
-  padding-bottom: 8px;
+  padding: 5px 0 15px 10px;
+  margin: 0;
 }
 
 .btn__explore {
@@ -247,14 +253,57 @@
   font-size: 0.87rem;
   width: 200px;
   border-radius: 24px;
-  background: linear-gradient(165deg, #ff79da, #9356dc);
+  background: linear-gradient(174deg, #ff79da, #9356dc);
   border: none;
   cursor: pointer;
   height: 48px;
   color: #fff;
   font-weight: bold;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 325ms;
+}
+.btn__explore:hover {
+  transform: scale(1.1);
+}
+.btn__like {
+  margin-top: 7px;
+  color: darkslategrey;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  box-sizing: content-box;
+  border: none;
+  background-color: #fff;
+  font-size: 24px;
+}
+.btn__like__1 {
+  position: absolute;
+  opacity: 0;
+}
+.btn__like:hover .btn__like__2 {
+  background: linear-gradient(174deg, #ff79da, #9356dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  animation: animheart 1000ms both;
+  transform-origin: center;
+}
+.btn__like:hover .btn__like__1 {
+  background: linear-gradient(174deg, #ff79da, #9356dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  opacity: 1;
 }
 
+@keyframes animheart {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -274,6 +323,9 @@ h3 {
   letter-spacing: -0.7px;
   font-size: 18px;
   padding-top: 5px;
+  margin: 0;
+  padding-left: 10px;
+  color: black;
 }
 
 a {

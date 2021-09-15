@@ -4,9 +4,8 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    height: 323px;
     background-color: $back-clr-intro;
-    margin-bottom: 30px;
+    padding-bottom: 55px;
 
     &__localisation {
         @include ban-loc;
@@ -48,7 +47,8 @@
 
 /*Section 2*/
 .section2 {
-    height: 420px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 
     &__bloc {
     display: flex;
@@ -133,7 +133,6 @@
 
 .section3 {
     background-color: $back-clr-intro;
-    height: 1215px;
 
     &__bloc {
         &--title {
@@ -149,10 +148,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 1055px;
+    height: 1070px;
+    padding-bottom: 70px;
 
     &__bloc {
-        flex-basis: 20%;
         border-radius: 15px;
         box-shadow: $box-shadow;
         background-color: $back-clr;
@@ -190,11 +189,18 @@
         }   
 
         &__text {
-            line-height: 6px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-top: 14px;
+            &__cont {
+                flex-basis: 77%;
+            }
             & p {
                 color: $back-clr-foot;
                 font-size: 17px;
-                padding-bottom: 8px;
+                padding: 5px 0 15px 10px;
+                margin: 0;
             }
         }           
     }
