@@ -1,9 +1,12 @@
+/*Intro*/
 .intro {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    height: 350px;
+    height: 323px;
+    background-color: $back-clr-intro;
+    margin-bottom: 30px;
 
     &__localisation {
         @include ban-loc;
@@ -20,46 +23,82 @@
         }
     }
 
-    &__text h1 {
-        @include grostitres;
-        width: 70%;
-        display: inline-flex;
-        margin-top: 30px;
-        margin-bottom: 12px;
-    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & h1 {
+            @include grostitres;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            width: 75%;
+            font-size: x-large;
+        }
     
-    &__text p {
+        & p {
         color: $color-p;
-        width: 80%;
         display: inline-flex;
         margin-top: 0;
         font-size: 17px;
         margin-bottom: 32px;
-    }
+        }
+    }    
 }
 
-.titlesection2 {
-    & h2 {
-        @include grostitres;
-        margin-left: 15px;
-    }
-}
-
+/*Section 2*/
 .section2 {
+    height: 420px;
+
+    &__bloc {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+        &__title {
+            @include grostitres;
+            width: 94%;
+            font-size: initial;
+        }
+    }
 }
 
 .fonction {
 
     border-radius: 20px;
     box-shadow: $box-shadow;
-    width: 90%;
+    background-color: $back-clr-intro;
     display: flex;
     justify-content: flex-start;
     @include marginfonction;
 
+    &__etapes {
+        display: flex;
+        align-items: baseline;
+        min-width: 310px;
+        font-size: 15px;
+        padding: 4px;
+    }
+        
+    & a {
+        @include liens;
+        color: black;
+    }
+
+    &:hover {
+        background-color: $color-hover;
+        & .fonction__bloc {
+            &__mob {
+                color: $color-primary;
+            }
+            &__list {
+                color: $color-primary;
+            }
+            &__store {
+                color: $color-primary;
+            }
+        }
+    }
 
     &__bloc {
         color: $back-clr;
@@ -74,19 +113,91 @@
         margin-left: -12px;
         margin-right: 20px;
 
-        &--mob {    
+        &__mob {    
             color: $color-p;
-            font-size: 19px;
+            font-size: 20px;
             margin-right: 20px;
         }
-        &--list {
+        &__list {
             color: $color-p;
-            font-size: 15px;
+            font-size: 18px;
             margin-right: 17px;
         }
-        &--store {
-            color: $color-primary;
+        &__store {
+            color: $color-p;
             margin-right: 13px;
+            font-size: 18px;
         }
     }
 }
+
+/*Section 3*/
+
+.section3 {
+    background-color: $back-clr-intro;
+
+    &__bloc {
+        &--title {
+            @include grostitres;
+            font-size: initial;
+            padding-top: 30px;
+            padding-left: 18px;
+        }
+    }
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1055px;
+
+    &__bloc {
+        flex-basis: 20%;
+        border-radius: 15px;
+        box-shadow: $box-shadow;
+        background-color: $back-clr;
+        width: 90%;
+
+        &__img {
+            position: relative;
+            display: flex;
+
+            & img {
+                flex-basis: 100%;
+                object-fit: cover;
+                display: flex;
+                height: 172px;
+                object-position: bottom;
+                border-radius: 15px 15px 0 0;
+            }
+            &__ind {
+                position: absolute;
+                right: 13px;
+                top: 13px;
+                background-color: $color-tertiary;
+                color: $color-news;
+                border-radius: 3px;
+                padding: 8px 12px 5px 12px;
+                font-size: 14px;
+                font-family: sans-serif;
+                font-weight: bold;
+            }
+            &--mod img{
+                object-position: center;
+            }
+        }   
+
+        &__text {
+            line-height: 6px;
+            & p {
+                color: $back-clr-foot;
+                font-size: 17px;
+                padding-bottom: 8px;
+            }
+        }           
+    }
+}
+
+
+

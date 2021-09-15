@@ -8,11 +8,12 @@
 }
 .logo a {
   text-decoration: none;
+  display: block;
 }
 .logo__ban {
   display: flex;
   justify-content: center;
-  box-shadow: 0px 4px 4px #dbdbdb;
+  box-shadow: 0px 4px 4px #cfcfcf;
   margin-bottom: 4px;
 }
 .logo__img {
@@ -51,15 +52,18 @@
   width: 17px;
 }
 
+/*Intro*/
 .intro {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  height: 350px;
+  height: 323px;
+  background-color: #f6f6f6;
+  margin-bottom: 30px;
 }
 .intro__localisation {
-  background: #ebeaea;
+  background: #eaeaea;
   color: #353535;
   display: flex;
   justify-content: space-evenly;
@@ -67,51 +71,82 @@
 }
 .intro__localisation--input {
   border: none;
-  background: #ebeaea;
+  background: #eaeaea;
   color: #353535;
   font-weight: bolder;
   font-size: 15px;
   width: 130px;
   margin-left: 8px;
 }
+.intro__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .intro__text h1 {
   letter-spacing: -1px;
-  font-size: 23px;
-  width: 70%;
-  display: inline-flex;
+  display: flex;
   margin-top: 30px;
   margin-bottom: 12px;
+  width: 75%;
+  font-size: x-large;
 }
 .intro__text p {
   color: #757575;
-  width: 80%;
   display: inline-flex;
   margin-top: 0;
   font-size: 17px;
   margin-bottom: 32px;
 }
 
-.titlesection2 h2 {
-  letter-spacing: -1px;
-  font-size: 23px;
-  margin-left: 15px;
-}
-
+/*Section 2*/
 .section2 {
+  height: 420px;
+}
+.section2__bloc {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.section2__bloc__title {
+  letter-spacing: -1px;
+  display: flex;
+  width: 94%;
+  font-size: initial;
+}
 
 .fonction {
   border-radius: 20px;
-  box-shadow: 0px 4px 4px #dbdbdb;
-  width: 90%;
+  box-shadow: 0px 4px 4px #ececec;
+  background-color: #f6f6f6;
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 15px;
+  margin-bottom: 19px;
+  margin-top: 8px;
+}
+.fonction__etapes {
+  display: flex;
+  align-items: baseline;
+  min-width: 310px;
+  font-size: 15px;
+  padding: 4px;
+}
+.fonction a {
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+.fonction:hover {
+  background-color: #f5edff;
+}
+.fonction:hover .fonction__bloc__mob {
+  color: #9356DC;
+}
+.fonction:hover .fonction__bloc__list {
+  color: #9356DC;
+}
+.fonction:hover .fonction__bloc__store {
+  color: #9356DC;
 }
 .fonction__bloc {
   color: #fff;
@@ -126,19 +161,82 @@
   margin-left: -12px;
   margin-right: 20px;
 }
-.fonction__bloc--mob {
+.fonction__bloc__mob {
   color: #757575;
-  font-size: 19px;
+  font-size: 20px;
   margin-right: 20px;
 }
-.fonction__bloc--list {
+.fonction__bloc__list {
   color: #757575;
-  font-size: 15px;
+  font-size: 18px;
   margin-right: 17px;
 }
-.fonction__bloc--store {
-  color: #9356DC;
+.fonction__bloc__store {
+  color: #757575;
   margin-right: 13px;
+  font-size: 18px;
+}
+
+/*Section 3*/
+.section3 {
+  background-color: #f6f6f6;
+}
+.section3__bloc--title {
+  letter-spacing: -1px;
+  display: flex;
+  font-size: initial;
+  padding-top: 30px;
+  padding-left: 18px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 1055px;
+}
+.cards__bloc {
+  flex-basis: 20%;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px #ececec;
+  background-color: #fff;
+  width: 90%;
+}
+.cards__bloc__img {
+  position: relative;
+  display: flex;
+}
+.cards__bloc__img img {
+  flex-basis: 100%;
+  object-fit: cover;
+  display: flex;
+  height: 172px;
+  object-position: bottom;
+  border-radius: 15px 15px 0 0;
+}
+.cards__bloc__img__ind {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  background-color: #99E2D0;
+  color: #299077;
+  border-radius: 3px;
+  padding: 8px 12px 5px 12px;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.cards__bloc__img--mod img {
+  object-position: center;
+}
+.cards__bloc__text {
+  line-height: 6px;
+}
+.cards__bloc__text p {
+  color: #353535;
+  font-size: 17px;
+  padding-bottom: 8px;
 }
 
 .btn__explore {
@@ -159,6 +257,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
 
 li, p {
@@ -168,6 +267,12 @@ li, p {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Shrikhand", sans-serif;
   font-weight: bold;
+}
+
+h3 {
+  letter-spacing: -0.7px;
+  font-size: 18px;
+  padding-top: 5px;
 }
 
 a {
