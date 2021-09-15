@@ -68,14 +68,12 @@
     border-radius: 20px;
     box-shadow: $box-shadow;
     background-color: $back-clr-intro;
-    display: flex;
-    justify-content: flex-start;
     @include marginfonction;
+    width: 90%;
 
     &__etapes {
         display: flex;
         align-items: baseline;
-        min-width: 310px;
         font-size: 15px;
         padding: 4px;
     }
@@ -135,6 +133,7 @@
 
 .section3 {
     background-color: $back-clr-intro;
+    height: 1215px;
 
     &__bloc {
         &--title {
@@ -170,6 +169,7 @@
                 height: 172px;
                 object-position: bottom;
                 border-radius: 15px 15px 0 0;
+                width: 90%;
             }
             &__ind {
                 position: absolute;
@@ -185,6 +185,7 @@
             }
             &--mod img{
                 object-position: center;
+                width: 90%;
             }
         }   
 

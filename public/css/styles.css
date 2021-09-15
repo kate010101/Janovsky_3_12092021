@@ -119,15 +119,13 @@
   border-radius: 20px;
   box-shadow: 0px 4px 4px #ececec;
   background-color: #f6f6f6;
-  display: flex;
-  justify-content: flex-start;
   margin-bottom: 19px;
   margin-top: 8px;
+  width: 90%;
 }
 .fonction__etapes {
   display: flex;
   align-items: baseline;
-  min-width: 310px;
   font-size: 15px;
   padding: 4px;
 }
@@ -180,6 +178,7 @@
 /*Section 3*/
 .section3 {
   background-color: #f6f6f6;
+  height: 1215px;
 }
 .section3__bloc--title {
   letter-spacing: -1px;
@@ -214,6 +213,7 @@
   height: 172px;
   object-position: bottom;
   border-radius: 15px 15px 0 0;
+  width: 90%;
 }
 .cards__bloc__img__ind {
   position: absolute;
@@ -229,6 +229,7 @@
 }
 .cards__bloc__img--mod img {
   object-position: center;
+  width: 90%;
 }
 .cards__bloc__text {
   line-height: 6px;
