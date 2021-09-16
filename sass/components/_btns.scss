@@ -36,17 +36,13 @@
         }
         &:hover {
             & .btn__like__2 {
-                background: linear-gradient(174deg, #ff79da, #9356dc);
-                -webkit-text-fill-color: transparent;
-                -webkit-background-clip: text;
+                @include heart ;
                 font-weight: 900;
                 animation: animheart 1000ms both;
                 transform-origin: center;    
             }
             & .btn__like__1 {
-                background: linear-gradient(174deg, #ff79da, #9356dc);
-                -webkit-text-fill-color: transparent;
-                -webkit-background-clip: text;
+                @include heart ;
                 opacity: 1;
             }
         }
