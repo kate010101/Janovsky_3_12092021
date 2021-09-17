@@ -17,7 +17,7 @@
 <!--Entête Logo-->                                 
    <div class="logo__ban">
       <div class="logo__title">
-         <a class="home" href="#">
+         <a href="accueil.html">
             <img class="logo__img" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"/>
          </a>
       </div> 
@@ -29,7 +29,9 @@
    <div class="intro__localisation">
       <form>
          <p>
-            <label for="location"><i class="fas fa-map-marker-alt"></i></label>
+            <label for="location">
+               <i class="fas fa-map-marker-alt"></i>
+            </label>
             <input type="text" name="location" id="location" value="Paris, Belleville" class="intro__localisation--input"/>
          </p> 
       </form> 
@@ -39,8 +41,12 @@
       <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
    </div>
    <div class="btn">
-         <button class="btn__explore">Explorer nos restaurants</button> 
-   </div>     
+      <a href="#rest">
+         <div class="btn__explore">
+            Explorer nos restaurants
+         </div>
+      </a>  
+   </div> 
 </section>
 
 <!--Section 2 Fonctionnement-->
@@ -48,34 +54,36 @@
    <div class="section2__bloc">
       <div class="section2__bloc__title">
          <h2>Fonctionnement</h2>
-      </div>   
-      <div class="fonction">
-         <a href="#rest">
-            <h4 class="fonction__etapes">
-               <span class="fonction__bloc">1</span>
-               <i class="fas fa-mobile-alt fonction__bloc__mob"></i>
-               Choisissez un restaurant
-            </h4>
+      </div>
+      <div class="fonctionnement">    
+         <a href="#rest">  
+            <div class="fonction">
+               <h4 class="fonction__etapes">
+                  <span class="fonction__bloc">1</span>
+                  <i class="fas fa-mobile-alt fonction__bloc__mob"></i>
+                  Choisissez un restaurant
+               </h4>
+            </div>
          </a>
-      </div>    
-      <div class="fonction">
+         <a href="#">       
+            <div class="fonction">
+               <h4 class="fonction__etapes">
+                  <span class="fonction__bloc">2</span>
+                  <i class="fas fa-list-ul fonction__bloc__list"></i>
+                  Composez votre menu
+               </h4>   
+            </div>
+         </a>     
          <a href="#">
-            <h4 class="fonction__etapes">
-               <span class="fonction__bloc">2</span>
-               <i class="fas fa-list-ul fonction__bloc__list"></i>
-               Composez votre menu
-            </h4>
-         </a>   
-      </div>  
-      <div class="fonction">
-         <a href="#">
-            <h4 class="fonction__etapes">
-               <span class="fonction__bloc">3</span>
-               <i class="fas fa-store fonction__bloc__store"></i>
-               Dégustez au restaurant
-            </h4>
-         </a>   
-      </div>   
+            <div class="fonction">        
+               <h4 class="fonction__etapes">
+                  <span class="fonction__bloc">3</span>
+                  <i class="fas fa-store fonction__bloc__store"></i>
+                  Dégustez au restaurant
+               </h4>   
+            </div>
+         </a>
+      </div>         
    </div>
 </section>
 
@@ -87,7 +95,7 @@
       </div>
       <div class="cards">
          <div class="cards__bloc">
-            <a href="#">
+            <a href="palettedesgouts.html">
                <div class="cards__bloc__img">
                   <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du goût"/>
                   <span class="cards__bloc__img__ind">Nouveau</span>
@@ -98,10 +106,10 @@
                      <p>Ménilmontant</p>
                   </div>      
                   <div class="cards__bloc__text__icon">
-                     <button class="btn__like">
-                        <i class="fa fa-heart-o btn__like__1" aria-hidden="true"></i>
-                        <i class="fa fa-heart-o btn__like__2" aria-hidden="true"></i>
-                     </button>   
+                     <div class="btn__like">
+                           <i class="fa fa-heart-o btn__like__1" aria-hidden="true"></i>
+                           <i class="fa fa-heart-o btn__like__2" aria-hidden="true"></i>  
+                     </div>   
                   </div>
                </div>
             </a>   
@@ -118,10 +126,10 @@
                      <p>Charonne</p>
                   </div>
                   <div class="cards__bloc__text__icon">
-                     <button class="btn__like">
+                     <div class="btn__like">
                         <i class="fa fa-heart-o btn__like__1" aria-hidden="true"></i>
                         <i class="fa fa-heart-o btn__like__2" aria-hidden="true"></i>
-                     </button>
+                     </div>
                   </div>   
                </div>
             </a>   
@@ -137,10 +145,10 @@
                      <p>Cité Rouge</p>
                   </div>
                   <div class="cards__bloc__text__icon">
-                     <button class="btn__like">
+                     <div class="btn__like">
                         <i class="fa fa-heart-o btn__like__1" aria-hidden="true"></i>
                         <i class="fa fa-heart-o btn__like__2" aria-hidden="true"></i>
-                     </button>
+                     </div>
                   </div>   
                </div>
             </a>   
@@ -156,10 +164,10 @@
                      <p>Folie-Méricourt</p>
                   </div>
                   <div class="cards__bloc__text__icon">
-                     <button class="btn__like">
+                     <div class="btn__like">
                         <i class="fa fa-heart-o btn__like__1" aria-hidden="true"></i>
                         <i class="fa fa-heart-o btn__like__2" aria-hidden="true"></i>
-                     </button>
+                     </div>
                   </div>   
                </div>
             </a>   
@@ -172,7 +180,9 @@
 <footer>
    <div class="footer__choice">
       <div class="footer__logo">
-         <img class="footer__logo--clr" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"/>
+         <a href="accueil.html">
+            <img class="footer__logo__clr" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"/>
+         </a>
       </div>
          <ul class="footer__options">
             <li><a href="#"><i class="fa fa-cutlery footer__options--icon" aria-hidden="true"></i>Proposer un restaurant</a></li>

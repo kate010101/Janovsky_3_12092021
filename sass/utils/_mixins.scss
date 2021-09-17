@@ -27,11 +27,6 @@
     display: flex;
  }
 
- @mixin marginfonction {
-   margin-bottom: 19px;
-   margin-top: 8px;
- }
-
  @mixin background {
    background-repeat: no-repeat;
    background-size: cover;

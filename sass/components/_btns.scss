@@ -6,20 +6,21 @@
     font-size: 0.87rem;
     width: 200px;
     border-radius: 24px;
-    background: linear-gradient(174deg, #ff79da, #9356dc);
+    background: $color-heart;
     border: none;
     cursor: pointer;
     height: 48px;
     color: $back-clr;
     font-weight: bold;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 325ms;
+    box-shadow: $box-shad-btn;
     &:hover {
-        transform: scale(1.10);
+        filter: opacity(0.8);
+        box-shadow: $box-shad-after;
         }
     }
+}
 
+.btn {
     &__like {
         margin-top: 7px;
         color: darkslategrey;
@@ -30,15 +31,19 @@
         border: none;
         background-color: $back-clr;
         font-size: 24px;
+        &--backg {
+            background: $back-clr-intro;
+        }
         &__1 {
             position: absolute;
             opacity: 0;
         }
+
         &:hover {
             & .btn__like__2 {
                 @include heart ;
                 font-weight: 900;
-                animation: animheart 1000ms both;
+                animation: animheart 400ms both;
                 transform-origin: center;    
             }
             & .btn__like__1 {

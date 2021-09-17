@@ -1,0 +1,46 @@
+/*Présentation*/
+.prest {
+	& img {
+        width: 100%;
+        max-height: 280px;
+        object-fit: cover;
+    }
+}
+
+.menu {
+    background: $back-clr-intro;
+    border-radius: 35px 35px 0 0;
+    padding-top: 8px;
+    top: -53px;
+    position: relative;
+
+    &__titre {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    & h1 {
+    font-family: "Shrikhand" , sans-serif;
+    font-size: 27px;
+    }
+}
+
+/*Entrées*/
+.entrees {
+    &__titre {
+        text-transform: uppercase;
+        display: flex;
+
+        & h2 {
+            border-bottom: $color-tertiary solid 3px;
+            font-weight: lighter;
+            font-size: initial;
+            padding-bottom: 5px;
+            font-size: 15px;
+            color: $back-clr-foot;
+            margin-left: 15px;
+            width: 42px;
+        }
+    }
+}

@@ -57,30 +57,37 @@
 
         &__title {
             @include grostitres;
-            width: 94%;
-            font-size: initial;
+            align-self: flex-start;
+            padding-left: 35px;
         }
     }
 }
 
-.fonction {
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    height: 263px;
+    justify-content: space-around;
+    margin-left: 13px;
 
+    & a {
+        @include liens;
+        color: black;
+    }
+}
+
+.fonction {
     border-radius: 20px;
     box-shadow: $box-shadow;
     background-color: $back-clr-intro;
-    @include marginfonction;
-    width: 90%;
 
     &__etapes {
         display: flex;
         align-items: baseline;
         font-size: 15px;
-        padding: 4px;
-    }
-        
-    & a {
-        @include liens;
-        color: black;
+        padding: 19px;
+        padding-right: 38px;
+        margin: 0;
     }
 
     &:hover {
@@ -101,15 +108,15 @@
     &__bloc {
         color: $back-clr;
         border-radius: 20px;
-        background: $color-primary;
+        background: #9356DC;
         padding-top: 6px;
-        padding-bottom: 2px;
-        padding-left: 9px;
-        padding-right: 8px;
+        padding-bottom: 3px;
         font-size: 14px;
         font-weight: 100;
-        margin-left: -12px;
+        margin-left: -32px;
         margin-right: 20px;
+        width: 26px;
+        text-align: center;
 
         &__mob {    
             color: $color-p;
@@ -137,7 +144,6 @@
     &__bloc {
         &--title {
             @include grostitres;
-            font-size: initial;
             padding-top: 30px;
             padding-left: 18px;
         }
@@ -201,6 +207,12 @@
                 font-size: 17px;
                 padding: 5px 0 15px 10px;
                 margin: 0;
+            }
+            &__icon {
+                display: flex;
+                justify-content: space-evenly;
+                flex-basis: 20%;
+                height: 30px;
             }
         }           
     }
