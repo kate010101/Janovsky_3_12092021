@@ -141,6 +141,11 @@
 .section3 {
     background-color: $back-clr-intro;
 
+    & h3 {
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+
     &__bloc {
         &--title {
             @include grostitres;
