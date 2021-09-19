@@ -312,6 +312,7 @@ main {
   font-size: 27px;
 }
 
+/*Menus*/
 .cartes {
   padding-bottom: 30px;
 }
@@ -345,6 +346,7 @@ main {
   justify-content: space-between;
   box-shadow: 1px 4px 6px 2px #ececec;
   overflow: hidden;
+  animation: blocs 1000ms ease-in-out both;
 }
 .carte__bloc:hover .carte__prix {
   animation: basis 500ms ease-in-out forwards;
@@ -352,6 +354,33 @@ main {
 .carte__bloc:hover .carte__prix--check {
   animation: checked 500ms ease-in-out forwards;
   flex-basis: 25%;
+}
+.carte__bloc--1 {
+  animation-delay: 100ms;
+}
+.carte__bloc--2 {
+  animation-delay: 200ms;
+}
+.carte__bloc--3 {
+  animation-delay: 300ms;
+}
+.carte__bloc--4 {
+  animation-delay: 400ms;
+}
+.carte__bloc--5 {
+  animation-delay: 500ms;
+}
+.carte__bloc--6 {
+  animation-delay: 600ms;
+}
+.carte__bloc--7 {
+  animation-delay: 700ms;
+}
+.carte__bloc--8 {
+  animation-delay: 800ms;
+}
+.carte__bloc--9 {
+  animation-delay: 900ms;
 }
 .carte__text {
   display: flex;
@@ -416,6 +445,16 @@ main {
   }
   100% {
     flex-basis: 25%;
+  }
+}
+@keyframes blocs {
+  0% {
+    transform: translateY(70%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 .btn {

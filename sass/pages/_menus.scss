@@ -30,7 +30,7 @@ main {
     }
 }
 
-
+/*Menus*/
 .cartes {
     padding-bottom: 30px;
 
@@ -74,6 +74,12 @@ main {
                 animation: checked 500ms ease-in-out forwards;
                 flex-basis: 25%;
                 }
+            }
+        }
+        animation: blocs $anim-dur ease-in-out both;
+        @for $i from 1 to $num-blocs {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
             }
         }
     }
@@ -148,5 +154,16 @@ main {
     }
     100% {
         flex-basis: 25%;
+    }
+}
+
+@keyframes blocs {
+    0% {
+        transform: translateY(70%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
     }
 }
