@@ -34,9 +34,9 @@
    height: 70%;
  }
 
-
 @mixin heart {
    background: linear-gradient(5deg, #ff79da, #9356dc);
    -webkit-text-fill-color: transparent;
    -webkit-background-clip: text;
 }
+

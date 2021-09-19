@@ -312,12 +312,13 @@ main {
   font-size: 27px;
 }
 
-/*Entrées*/
+.cartes {
+  padding-bottom: 30px;
+}
 .cartes__titre {
   text-transform: uppercase;
   display: flex;
   background: #f6f6f6;
-  margin-bottom: 10px;
 }
 .cartes__titre h2 {
   border-bottom: #99E2D0 solid 3px;
@@ -334,7 +335,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 250px;
+  height: 227px;
   margin: 0 11px 0 11px;
 }
 .carte__bloc {
@@ -343,18 +344,37 @@ main {
   display: flex;
   justify-content: space-between;
   box-shadow: 1px 4px 6px 2px #ececec;
+  overflow: hidden;
+}
+.carte__bloc:hover .carte__prix {
+  animation: basis 500ms ease-in-out forwards;
+}
+.carte__bloc:hover .carte__prix--check {
+  animation: checked 500ms ease-in-out forwards;
+  flex-basis: 25%;
 }
 .carte__text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 14px 12px 8px 12px;
+  padding: 11px 0px 8px 12px;
+  flex-basis: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.carte__text h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .carte__text p {
   color: #353535;
   font-size: 15px;
   padding: 6px 0 4px 0px;
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .carte__prix {
   display: flex;
@@ -362,14 +382,51 @@ main {
   font-size: 15px;
   justify-content: center;
   align-items: flex-end;
-  padding: 0 23px 12px 0;
+  padding: 0 0 9px 0;
+  flex-basis: 0%;
+}
+.carte__prix--check {
+  display: flex;
+  font-size: 22px;
+  align-items: center;
+  padding: 0;
+  flex-basis: 0%;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  transform: translateX(100%);
+}
+.carte__prix--check i {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  filter: invert(1);
 }
 
+@keyframes checked {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes basis {
+  0% {
+    flex-basis: 0%;
+  }
+  100% {
+    flex-basis: 25%;
+  }
+}
+.btn {
+  justify-content: center;
+  display: flex;
+}
 .btn__explore {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.87rem;
+  font-size: 0.88rem;
   width: 200px;
   border-radius: 24px;
   background: linear-gradient(174deg, #ff79da, #9356dc);
@@ -379,6 +436,10 @@ main {
   color: #fff;
   font-weight: bold;
   box-shadow: 0px 3px 8px #b0b0b0;
+}
+.btn__explore--command {
+  width: 180px;
+  margin: 15px 0 60px 0;
 }
 .btn__explore:hover {
   filter: opacity(0.8);
