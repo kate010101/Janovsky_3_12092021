@@ -355,6 +355,9 @@ main {
   animation: checked 500ms ease-in-out forwards;
   flex-basis: 25%;
 }
+.carte__bloc:hover .carte__prix--check i {
+  transform: rotate(0deg);
+}
 .carte__bloc--1 {
   animation-delay: 100ms;
 }
@@ -429,6 +432,8 @@ main {
   display: flex;
   justify-content: center;
   filter: invert(1);
+  transform: rotate(-360deg);
+  transition: transform 500ms ease-in-out;
 }
 
 @keyframes checked {
