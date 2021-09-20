@@ -1,3 +1,7 @@
+.acc {
+    background: $back-clr;
+}
+
 /*Intro*/
 .intro {
     display: flex;
@@ -224,4 +228,145 @@
 }
 
 
+/*Ordinateurs*/
+@media all and (min-width: 768px) {
+    .acc {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    .intro {
+        flex-basis: 60%;
+        justify-content: space-between;
+        background: $back-clr;
+    }
+
+    .section2 {
+        flex-basis: 40%;
+        margin: 0;
+        padding: 0;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &__bloc {
+            justify-content: center;
+            &__title {
+                padding: 0;
+                align-self: center;
+            }
+        }
+    }
+
+    .section3 {
+        flex-basis: 100%;
+        &__bloc {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            &--title {
+                flex-basis: 100%;
+                padding: 15px 0 15px 0;
+                justify-content: center;
+            }
+        }
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-basis: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        &__bloc {
+            flex-basis: 23%;
+            min-width: 266px;
+            margin: 0 4px 15px 4px;
+        }
+    }
+
+    .footer {
+        &__options {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+/*Tablettes*/
+@media all and (min-width: 572px) and (max-width: 767px) {
+    .acc {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .intro {
+        flex-basis: 100%;
+        justify-content: space-between;
+        background: $back-clr;
+        padding-bottom: 30px;
+    }
+
+    .section2 {
+        flex-basis: 100%;
+        margin: 0;
+        padding: 0;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &__bloc {
+            justify-content: center;
+            &__title {
+                padding: 0;
+                align-self: center;
+            }
+        }
+    }
+
+    .section3 {
+        flex-basis: 100%;
+        &__bloc {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            &--title {
+                flex-basis: 100%;
+                padding: 15px 0 15px 0;
+                justify-content: center;
+            }
+        }
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-basis: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        &__bloc {
+            flex-basis: 23%;
+            min-width: 266px;
+            margin: 0 4px 15px 4px;
+        }
+    }
+
+    .footer {
+        &__options {
+            flex-direction: row;
+            justify-content: space-evenly;
+            & li {
+                margin-right: 20px;
+            }
+        }
+        &__logo {
+            display: flex;
+            justify-content: center;
+            &__clr {
+                padding: 0;
+            }
+        }
+    }
+}

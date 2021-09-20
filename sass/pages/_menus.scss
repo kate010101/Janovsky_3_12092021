@@ -68,7 +68,7 @@ main {
     margin-bottom: 13px;
         &:hover {
             .carte__prix {
-                animation: basis 500ms ease-in-out forwards;
+                animation: basis 500ms ease-in-out both;
 
                 &--check {
                 animation: checked 500ms ease-in-out forwards;
@@ -170,5 +170,55 @@ main {
     100% {
         transform: translateY(0%);
         opacity: 1;
+    }
+}
+
+/*Tablettes*/
+@media all and (min-width: 572px) and (max-width: 767px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-basis: 100%;
+        &__titre {
+            justify-content: space-evenly;
+        }
+    }
+
+    .cartes {
+        flex-basis: 45%;
+    }
+
+    .btn {
+        flex-basis: 50%;
+        align-items: center;
+    }
+}
+
+/*Ordinateurs*/
+@media all and (min-width: 768px) {
+    .menu h1 {
+        flex-basis: 60%;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-basis: 100%;
+    }    
+
+    .cartes {
+        flex-basis: 33%;
+    }
+
+    .btn {
+        flex-basis: 100%;
     }
 }
