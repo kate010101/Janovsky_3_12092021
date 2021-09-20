@@ -314,7 +314,7 @@ main {
 
 /*Menus*/
 .cartes {
-  padding-bottom: 30px;
+  margin-bottom: 25px;
 }
 .cartes__titre {
   text-transform: uppercase;
@@ -336,7 +336,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 227px;
   margin: 0 11px 0 11px;
 }
 .carte__bloc {
@@ -346,6 +345,7 @@ main {
   justify-content: space-between;
   box-shadow: 1px 4px 6px 2px #ececec;
   overflow: hidden;
+  margin-bottom: 13px;
   animation: blocs 1000ms ease-in-out both;
 }
 .carte__bloc:hover .carte__prix {
@@ -359,31 +359,34 @@ main {
   transform: rotate(0deg);
 }
 .carte__bloc--1 {
-  animation-delay: 100ms;
+  animation-delay: 90.9090909091ms;
 }
 .carte__bloc--2 {
-  animation-delay: 200ms;
+  animation-delay: 181.8181818182ms;
 }
 .carte__bloc--3 {
-  animation-delay: 300ms;
+  animation-delay: 272.7272727273ms;
 }
 .carte__bloc--4 {
-  animation-delay: 400ms;
+  animation-delay: 363.6363636364ms;
 }
 .carte__bloc--5 {
-  animation-delay: 500ms;
+  animation-delay: 454.5454545455ms;
 }
 .carte__bloc--6 {
-  animation-delay: 600ms;
+  animation-delay: 545.4545454545ms;
 }
 .carte__bloc--7 {
-  animation-delay: 700ms;
+  animation-delay: 636.3636363636ms;
 }
 .carte__bloc--8 {
-  animation-delay: 800ms;
+  animation-delay: 727.2727272727ms;
 }
 .carte__bloc--9 {
-  animation-delay: 900ms;
+  animation-delay: 818.1818181818ms;
+}
+.carte__bloc--10 {
+  animation-delay: 909.0909090909ms;
 }
 .carte__text {
   display: flex;
