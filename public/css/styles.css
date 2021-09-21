@@ -829,13 +829,21 @@ ul {
   background: white;
   width: 180px;
   height: 180px;
-  background-image: url(file:///C:/Users/ladie/Documents/P3_janovsky_lydie/images/logo/ohmyfood@2x.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
   border-radius: 50%;
   z-index: 2;
   position: fixed;
+}
+.span__4 h1 {
+  font-family: "Shrikhand", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 39%;
+  left: 6%;
 }
 
 .barre {
