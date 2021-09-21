@@ -39,41 +39,65 @@ ul {
 
 /*Animation Chargement*/
 
+.anim {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+	animation: hidde 3000ms linear 200ms forwards;
+}
+
+@keyframes hidde {
+	0% {
+		visibility: visible;
+	}
+	99% {
+		visibility: visible;
+	}
+	100% {
+		visibility: hidden;
+	}
+}
+
 .circle {
-	position: relative;
+	position: fixed;
 	width: 250px;
 	height: 250px;
 	border-radius: 50%;
-	animation: spinner 2800ms linear 200ms forwards;
+	animation: spinner 3000ms linear 200ms forwards;
+	align-items: center;
+    justify-content: center;
   }
   
    @keyframes spinner {
 	0% {
 	  transform: rotate(0deg);
-	  opacity: 0.45;  
+	  opacity: 0.45;
 	}
 	25% {
 	  transform: rotate(90deg);
-	  opacity: 1; 
+	  opacity: 1;
 	}
 	75% {
 	  transform: rotate(270deg);
-	  opacity: 1; 
+	  opacity: 1;
 	}
 	100% {
 	  transform: rotate(360deg);
-	  opacity: 0.45;
+	  opacity: 0.3;
 	}
   }
   
   .circle:after {
 	content: '';
-	position: absolute;
+	position: fixed;
 	border-radius: 50%;
   }
   
   .circle span {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(#EE7DDA, #9356dc, #773A75);
@@ -100,14 +124,13 @@ ul {
 	background: white;
 	width: 180px;
 	height: 180px;
-			background-image: url("https://scrantonicity2.github.io/StephaneMercier_03_16082021/images/logo/ohmyfood@2x.svg");
+	background-image: url(file:///C:/Users/ladie/Documents/P3_janovsky_lydie/images/logo/ohmyfood@2x.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 80%;
 	border-radius: 50%;
-	position: absolute;
-	bottom: 45px;
-	left: 45px;
+	z-index: 2;
+	position: fixed;
   }
   
   .barre {
@@ -115,10 +138,9 @@ ul {
 	height: 170px;
 	border-left: solid black 2px;
 	border-radius: 100%;
-	position: absolute;
-	bottom: 50px;
-	left: 50px;
-	animation: bar 2400ms linear 200ms forwards;
+	position: fixed;
+	z-index: 3;
+	animation: bar 3000ms linear 200ms forwards;
   }
   
    @keyframes bar {
@@ -127,7 +149,6 @@ ul {
 	  opacity: 0.45;  
 	}
 	75% {
-	  transform: rotate(-270deg);
 	  opacity: 1; 
 	}
 	100% {
