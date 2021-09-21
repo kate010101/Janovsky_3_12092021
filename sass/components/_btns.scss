@@ -47,15 +47,15 @@
         }
 
         &:hover {
-            & .btn__like__2 {
-                @include heart ;
-                font-weight: 900;
-                animation: animheart 400ms both;
-                transform-origin: center;    
-            }
             & .btn__like__1 {
                 @include heart ;
                 opacity: 1;
+                font-weight: 900;
+                animation: animheart 400ms both;
+            }
+            & .btn__like__2 {
+                @include heart ;
+                transform-origin: center; 
             }
         }
     }
@@ -63,7 +63,7 @@
 
 @keyframes animheart {
     0% {
-        transform: scale(0.1);
+        transform: scale(0.05);
     }
     100% {
         transform: scale(1);
