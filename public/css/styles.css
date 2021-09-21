@@ -183,13 +183,11 @@
   color: #fff;
   border-radius: 20px;
   background: #9356DC;
-  padding-top: 6px;
-  padding-bottom: 3px;
+  padding: 6px 9px 3px 9px;
   font-size: 14px;
   font-weight: 100;
   margin-left: -32px;
   margin-right: 20px;
-  width: 26px;
   text-align: center;
 }
 .fonction__bloc__mob {
@@ -296,26 +294,40 @@
   }
 
   .intro {
-    flex-basis: 60%;
+    flex-basis: 100%;
     justify-content: space-between;
     background: #fff;
   }
 
   .section2 {
-    flex-basis: 40%;
+    flex-basis: 100%;
     margin: 0;
     padding: 0;
-    height: 400px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    margin-bottom: 40px;
   }
   .section2__bloc {
     justify-content: center;
+    flex-basis: 100%;
   }
   .section2__bloc__title {
     padding: 0;
     align-self: center;
+  }
+
+  .fonctionnement {
+    flex-direction: row;
+    flex-basis: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .fonction {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .section3 {
