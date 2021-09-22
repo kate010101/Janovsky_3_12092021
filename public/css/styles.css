@@ -848,7 +848,7 @@ ul {
   z-index: 2;
   position: fixed;
 }
-.span__4 h1 {
+.span__4 h2 {
   font-family: "Shrikhand", sans-serif;
   margin: 0;
   display: flex;
@@ -856,6 +856,7 @@ ul {
   position: absolute;
   top: 39%;
   left: 6%;
+  font-size: 28px;
 }
 
 .barre {

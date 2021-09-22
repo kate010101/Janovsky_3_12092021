@@ -130,7 +130,7 @@ ul {
 	border-radius: 50%;
 	z-index: 2;
 	position: fixed;
-		& h1 {
+		& h2 {
 			font-family: "Shrikhand", sans-serif;
 			margin: 0;
 			display: flex;
@@ -138,6 +138,7 @@ ul {
 			position: absolute;
 			top: 39%;
 			left: 6%;
+			font-size: 28px;
 		}
   }
   
